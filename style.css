@@ -1,67 +1,141 @@
-body{
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0;
-  
+  background-color: white;
 }
-.encabezado, .contenido, .contenido-lateral, .pie-pagina{
-  padding: 1em 2em;
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main {
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.main img {
+  width: 100%;
+  max-width: 460px;;
+  display: block;
+  margin: 0;
+  margin-top: 0;
+
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png);
+}
+
+nav {
+  background-color: OrangeRed;
+  color: White;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  padding:0.75rem 1.25rem;
+}
+
+.supporting,
+.rating,
+.gallery,
+.location {
+  margin: 4em auto;
+}
+
+.supporting {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.supporting img {
+height:10%;
+width: 10%;
+margin:5px;
+}
+
+.rating {
+  background-color: OrangeRed;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating h1 {
+font-size:2.5rem;
 
 }
-.contenido, .contenido-lateral, .pie-pagina{
+
+.gallery img {
+  display: block;
+  width: 30%;
+  margin: 1.5%;
   float: left;
-  box-sizing: border-box;
-}
-.encabezado{
-  background-color: rgb(247,220,22);
-  height: 100px;
 }
 
-.contenido{
-  width: 60%;
-}
-.contenido-lateral{
-  width: 40%;
-  background-color: rgb(163,163,113);
-  height: 500px;
-}
-.post{
-  background-color: rgba(117,255,26,0.46);
-  height: 100px;
-  margin-bottom: 1em;
+.clearfix {
+  clear: both;
 }
 
-
-.pie-pagina{
-  width: 100%;
-  background-color: #000;
-  height: 50px;
+.location {
+  text-align: center;
+  margin-bottom: 7rem;
 }
 
-@media only screen and (min-width:780px) and (max-width:1024px){  
-.encabezado{
-  background-color: rgb(246,246,243);
-}
-.contenido, .contenido-lateral{
-  width: 100%;
-}
+.location img {
+width:100%;
 }
 
-@media only screen and (min-width:480px) and (max-width:780){
-.encabezado{
-  background-color: rgb(246,246,243);
-}
-.contenido, .contenido-lateral{
-  width:50%;
-}
+footer {
+  background-color: OrangeRed;
+  padding: 0 1rem;
 }
 
-@media only screen and (max-width:480px){
-  .encabezado{
-    height: 80px;
-  } 
-  .contenido{
-    background-color: rgb(250,250,168);
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em 0;
+  color: white;
+}
+
+@media only screen and  (max-width: 960px){
+.main{
+  padding:0;
+}
+}
+@media only screen and (max-width:700px){
+  .supporting img{
+    display:none;
   }
-  .contenido, .contenido-lateral{
-    width: 100%;
+}
+@media only screen and (max-width:470px){
+  .rating h1{
+    font-size:2rem;
   }
+  .gallery img{
+    margin:0;
+    width:100%;
+  }
+ footer nav {
+    display: none;
+  }
+  li{
+    display:block;
+    
+  }
+ .main ul{
+   padding:0;
+
+ }
+ 
 }
