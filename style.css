@@ -1,141 +1,155 @@
-html,
-body {
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  background-color: white;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.main {
-  height: 30rem;
-  padding-top: 1rem;
-}
-
-.main img {
-  width: 100%;
-  max-width: 460px;;
-  display: block;
-  margin: 0;
-  margin-top: 0;
-
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png);
-}
-
-nav {
-  background-color: OrangeRed;
-  color: White;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-  padding:0.75rem 1.25rem;
-}
-
-.supporting,
-.rating,
-.gallery,
-.location {
-  margin: 4em auto;
-}
-
-.supporting {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 1rem;
-}
-
-.supporting img {
-height:10%;
-width: 10%;
-margin:5px;
-}
-
-.rating {
-  background-color: OrangeRed;
-  height: 20rem;
-  padding: 0 1rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rating h1 {
-font-size:2.5rem;
-
-}
-
-.gallery img {
-  display: block;
-  width: 30%;
-  margin: 1.5%;
-  float: left;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.location {
-  text-align: center;
-  margin-bottom: 7rem;
-}
-
-.location img {
-width:100%;
-}
-
-footer {
-  background-color: OrangeRed;
-  padding: 0 1rem;
-}
-
-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5em 0;
-  color: white;
-}
-
-@media only screen and  (max-width: 960px){
-.main{
+*{
+  margin:0;
   padding:0;
+  box-sizing: border-box;
 }
+
+body{
+  background-color: #ffa07a;
+  
+  width: 100%;
+  
 }
-@media only screen and (max-width:700px){
-  .supporting img{
-    display:none;
-  }
+
+.photos{
+  padding:5%;
+  text-align: center  ;
+  
+  
+
 }
-@media only screen and (max-width:470px){
-  .rating h1{
-    font-size:2rem;
-  }
-  .gallery img{
-    margin:0;
-    width:100%;
-  }
- footer nav {
-    display: none;
-  }
-  li{
-    display:block;
+
+.photos img{
+  width:30%;
+  height: 385px;
+}
+
+.bar{
+  width: 100%;
+  background-color: #008080;
+ 
+}
+.bar ul{
+  width: 100%;
+  padding-top: 1rem;
+  
+}
+
+.bar a{
+  
+  color:#ffa07a;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  font-size: 1.3rem;
+}
+li{
+  list-style: none;
+}
+
+.intro{
+  background-color: #80513e;
+  color: #ffa07a;
+  text-align: center;
+  font-size: 1.5rem;
+  margin:10% auto;
+  padding:2%;
+  
+  
+}
+.intro h1{
+
+}
+
+.summary{
+line-height: 2.5;
+box-sizing: border-box;
+}
+
+.summary h2{
+  color:yellow;
+  font-size: 2rem;
+}
+
+.summary p{
+  color:white;
+  font-size: 1rem;
+}
+
+.testimonial{
+  background-color: #008080;
+  color: yellow;
+  box-sizing: border-box;
+}
+.testimonial h1{
+  font-size: 3rem;
+}
+
+.testimonial p{
+  font-size: 1.5rem;
+}
+.meetup{
+  text-align: center;
+  
+
+}
+
+.meetup img{
+  width: 100%;
+}
+
+.meetup h1{
+  color: yellow;
+  font-size: 2.5rem;
+}
+
+
+/* media queries */
+@media only screen and (max-width:900px){
+  .arriba{
+    width: 15%;
+    padding:1% ;
+    
+    margin: 0;
+    float: left;
     
   }
- .main ul{
-   padding:0;
-
- }
- 
+  .arriba a{
+     display: block;
+     
+  }
+  .arriba ul a{
+    text-align: left;
+  }
+  .arriba ul{
+    padding-top: 0;
+    width:
+    
+  }
+  .intro{
+    width: 85%;
+    height: ;
+    margin: 0;
+    padding: 1%;
+   
+    float: left;
+    
+   
+  }
+  .intro h1{
+    height: 96px;
+  }
+  .summary{
+   
+  }
+  .photos img{
+    display: block;
+    width: 80%;
+    margin: 5px 10%;
+    
+  }
+}
+body{
+  
 }
