@@ -8,6 +8,162 @@
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  
+}
+
+body{
+z-index:1;
+position: relative;
+}
+
+
+
+
+#header{
+  height: 69px;
+  display: flex;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  opacity: 1;
+  
+ 
+  
+  
+  
+}
+
+#logo{
+  height:50px;
+  margin-left: 10px;
+  
+  
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  
+  
+}
+a{
+  list-style: none;
+  margin:10px;
+}
+
+#section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 69px;
+  
+  
+  
+  
+  
+}
+
+#our_mission{
+  height: 700px;
+  width: 1200px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#h2h3_ourmission{
+  width: 100%;
+}
+.subtitulos h2{
+  font-size: 1.5rem;
+}
+
+#tea_month{
+  width: 1000px;
+  margin-top: 100px;
+}
+
+#container_img_month{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#tea_month img{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+
+}
+
+#tea_month img:hover{
+opacity: 1;
+width:305px ;
+height:205px ;
+}
+
+.items_month{
+  margin: 10px;
+}
+
+#locations{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items_locations{
+  width: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+}
+
+#locations h2{
+  width: 100%;
+  background-color: transparent;
+}
+
+.items_locations h3{
+  margin: 12px;
+}
+
+.items_locations h4{
+  margin: 12px;
+}
+
+footer h2{
+  font-size: 1.5rem;
+}
+
+
+#contacto{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+}
+
+#copyright{
+  text-align:left;
+  margin-left: 20px;
 }
 
 
